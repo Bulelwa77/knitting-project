@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project</title>
+  </head>
+  <style>
+    h1 {
+      text-align: center;
+      font-size: 50px;
+      font-weight: bold;
+      font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+      text-transform: uppercase;
+      color: black;
+    }
+
+    h2 {
+      text-align: center;
+      border: 1px solid greenyellow;
+      border-radius: 4px;
+      padding: 15px;
+      color: black;
+      margin-left: 500px;
+      margin-right: 500px;
+      font-family: Georgia, "Times New Roman", Times, serif;
+    }
+    body {
+      background: radial-gradient(
+        circle at 10% 20%,
+        rgba(216, 241, 230, 0.46) 0.1%,
+        rgba(233, 226, 226, 0.28) 90.1%
+      );
+    }
+    img {
+      margin: 0 auto;
+      display: block;
+      padding: 10px;
+      border-radius: 15px;
+    }
+
+    p {
+      text-align: center;
+      font-size: large;
+      margin: 9px 320px 9px 320px;
+      line-height: 1.4;
+    }
+
+    a {
+      display: block;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      margin-left: 580px;
+      margin-right: 580px;
+      color: #01005e;
+    }
+
+    button {
+      display: block;
+      margin: top 10px;
+      margin-bottom: 10px;
+      margin-left: 598px;
+      margin-right: 600px;
+      padding: 9px 10px;
+      border: 1px solid #01005e;
+      border-radius: 15px;
+      color: #01005e;
+      font-size: 13px;
+      background-color: #ffff;
+      box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.4);
+    }
+    button:hover {
+      color: #ffff;
+      background-color: #01005e;
+      transition: 150ms ease-in-out;
+      cursor: pointer;
+    }
+
+    h3 {
+      text-align: center;
+      font-weight: lighter;
+      font-size: medium;
+      padding: 10px;
+    }
+  </style>
+  <body>
+    <h1><em>I love knitting!</em></h1>
+
+    <h2>Have fun with Yarn!</h2>
+
+    <img
+      src="https://nimble-needles.com/wp-content/uploads/2021/09/how-to-knit-for-beginners.jpg"
+      width="650"
+      height="300"
+    />
+
+    <p>
+      <strong>Knitting</strong> is a method for production of textile fabrics by
+      interlacing yarn loops with loops of the same or other yarns. It is used
+      to create many types of garments. Knitting may be done by hand or by
+      machine. Unless you haven't been paying attention, you'll know that
+      knitting is a very serious moment. <em>Knitting is cool again!!!</em>
+    </p>
+
+    <a
+      href="https://en.wikipedia.org/wiki/Knitting"
+      alt="knitting"
+      target="_blank"
+      >Learn more on Wikipedia</a
+    >
+
+    <br />
+
+    <button>🧶Knitting Tutorial</button>
+
+    <br />
+
+    <hr />
+
+    <h3>Coded by Lelwa Maphatswana</h3>
+
+    <script>
+      function knit() {
+        let tutorial = prompt("Are you interested in knitting? Enter Yes or No")
+          .toLowerCase()
+          .trim();
+
+        let h1 = document.querySelector("h1");
+
+        if (tutorial == "yes") {
+          h1.innerHTML = "Yay! Let's get started";
+        } else {
+          h1.innerHTML = "Goodbye!";
+        }
+      }
+      let knitting = document.querySelector("button");
+
+      knitting.addEventListener("click", knit);
+    </script>
+  </body>
+</html>
